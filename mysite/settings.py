@@ -25,8 +25,8 @@ SECRET_KEY = 'p1fofakk%snap)%(g7-18%3l5l1bgjg5mwfp%*qri!5s8@fijx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', ' . pythonanywhere.com']
-
+#ALLOWED_HOSTS = ['127.0.0.1', ' . pythonanywhere.com', 'http://tiritos.pythonanywhere.com']
+ALLOWED_HOSTS = ['tiritos.pythonanywhere.com']
 
 # Application definition
 
