@@ -5,5 +5,7 @@
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="delete btn btn-default">Delete</button>
+		<a class="btn btn-default" href="{% url 'post_list' %}"><span class="glyphicon glyphicon-arrow-left"></span></a>
     </form>
+   
 {% endblock %}
