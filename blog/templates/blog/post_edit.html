@@ -5,7 +5,11 @@
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Guardar</button>
+        
         <a class="btn btn-default" href="{% url 'post_list' %}"><span class="glyphicon glyphicon-arrow-left"></span></a>
+    </form>
+    <form method="POST" >{% csrf_token %}
+        <button type="submit" class="delete btn btn-default">ELIMINAR</button>
     </form>
     
 

@@ -38,6 +38,10 @@ def post_edit(request, pk):
             post.published_date = timezone.now()
             post.save()
             return redirect('post_detail', pk=post.pk)
+    if request.method == "POST":  #forma alternativa de borrar un registro usando una misma ventana html
+            post.delete()			#################
+            return redirect('post_list')	###########
+
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
